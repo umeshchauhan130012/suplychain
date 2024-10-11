@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+
+
+body {
+    background: #F5F5F5 !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif !important;
+}
+.formInput input, .formInput select, .formInput textarea, .formInput label {
+    font-family: 'Lato', sans-serif !important;
+}
+.logo {
+    max-width: 242px;
+    max-height: 74px;
+    margin: auto;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.loginText {
+    height:auto;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.textSection {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.formSection {
+    width: 340px;
+    position: relative;
+    margin: auto;
+
+}
+
+.textSection h2 {
+    font-size: 24px;
+    color: #333333;
+    padding-top: 58px;
+    margin: 0;
+}
+
+.textSection p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.formSection .MuiInputBase-formControl {
+    background-color: transparent !important;
+    height: 56px;
+    width: 340px;
+    border: 1px solid #666666;
+    border-radius: 12px;
+    box-sizing: inherit;
+    margin: 0;
+
+}
+
+.formSection .css-zs07ro-MuiInputBase-root-MuiFilledInput-root {
+    background-color: transparent I !important;
+}
+
+.formSection .css-zs07ro-MuiInputBase-root-MuiFilledInput-root:before,
+.formSection .css-1ff8729-MuiInputBase-root-MuiFilledInput-root:before {
+    display: none;
+}
+
+.formSection .css-zs07ro-MuiInputBase-root-MuiFilledInput-root:after,
+.formSection .css-1ff8729-MuiInputBase-root-MuiFilledInput-root:after {
+    display: none;
+}
+
+.formSection .css-1gctnaj-MuiInputBase-input-MuiFilledInput-input:hover {
+    background-color: transparent;
+}
+
+.formSection .css-1gctnaj-MuiInputBase-input-MuiFilledInput-input {
+    background-color: transparent;
+    padding-top: 20px !important;
+}
+
+.formSection .css-r47a1p-MuiFormControl-root,
+.css-1ff8729-MuiInputBase-root-MuiFilledInput-root {
+    background-color: transparent;
+    width: 100%;
+    margin: 0px !important;
+}
+
+.formSection .css-xn6ruc>:not(style) {
+    width: inherit;
+}
+
+.formInput .MuiInputBase-root.Mui-focused {
+    background: #F6F9FF !important;
+    border: 1px solid #355BC0 !important;
+    border-radius: 12px;
+}
+
+.formSection .css-o943dk-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: #355BC0;
+}
+
+.formSection h3 {
+    text-align: right;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.formSection h3 a {
+    text-decoration: none;
+    color: #333333;
+}
+.customTopBottomSpacing {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.formSection button {
+    background: #A94545;
+    border-radius: 12px;
+    height: 48px;
+    width: 100%;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 30px;
+}
+
+.formSection span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    padding-top: 62px;
+    display: block;
+}
+
+.formSection span a {
+    color: #A94545;
+    text-decoration: none;
+}
+
+.TextSlide img {
+    max-width: 400px;
+    margin: auto;
+    width: 100%;
+}
+
+.TextSlide {
+    text-align: center;
+    height: auto;
+    width: 100%;
+
+}
+
+.loginSliderSec .slick-dots {
+    display: flex !important;
+    text-align: center;
+    justify-content: center;
+}
+
+.loginSliderSec .slick-dots button {
+    background: transparent;
+    color: transparent;
+    border: none;
+}
+
+.aLLTextSlider {
+    height: auto;
+    width: 100%;
+    color: #fff;
+    padding-top: 60px;
+}
+
+.loginSliderSec .slick-dots li {
+    height: 10px;
+    width: 10px;
+    margin: 0px 5px;
+    background-color: rgba(255, 255, 255, 0.54);
+    border-radius: 5px;
+}
+
+.loginSliderSec .slick-dots li.slick-active {
+    background-color: #fff !important;
+    width: 20px;
+
+}
+
+.loginSliderSec .slick-dots li::marker {
+    color: transparent;
+}
+
+.aLLTextSlider h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.aLLTextSlider p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    max-width: 600px;
+    margin: auto;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.alignCenter {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formSection small {
+    position: absolute;
+    right: 13px;
+    top: 13px;
+    z-index: 9;
+}
+.error-message {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    line-height: 1;
+    text-align: left;
+    color: red;
+    font-size: 14px;
+    padding: 0px 10px;
+}
+.buttonholder {
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.errorResponse {
+    display: block;
+    background-color: red;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 5px 10px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.formInput {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.formInput:last-of-type {
+    margin-bottom: 0px;
+}
+.formInput .MuiFormControl-root.css-kzv9dm {
+    margin: 0;
+    width: 100% !important;
+}
+
+.formInput .css-1thjcug::before, .css-dvhgws::before
+{
+    border-bottom: none !important;
+}
+
+.formInput .css-1thjcug::after, .css-dvhgws::after
+{
+    border-bottom: none !important;
+}
+
+.formInput .css-1thjcug:hover:not(.Mui-disabled, .Mui-error)::before
+{
+    border-bottom:none !important;
+}
+
+.formInput .css-13sljp9
+{
+    width: 100% !important;
+}
+
+.css-u9osun.Mui-focused
+{
+    top: 15px;
+}
+
+.formSection svg {
+    color: #666;
+}
+
+.formSection .Mui-focused .MuiInputAdornment-root svg {
+    color: #333 !important;
+}
+
+.SuccessSec p {
+    padding-top: 0 !important;
+    padding-bottom: 30px !important;
+}
+
+.SuccessSec p:nth-last-child(3) {
+    padding-bottom: 0 !important;
+}
+
+.AllPaddBg {
+    padding-top: 18px !important;
+    color: rgba(18, 18, 18, 0.54);
+}
+
+.textSection img {
+    max-width: 50px;
+    margin-top: 92px;
+}
+
+.SuccessSec h2,
+.SuccessSec span {
+    padding-top: 12px !important;
+}
+
+.SuccessSec .formSection button {
+    margin-top: 50px !important;
+}
+
+.formSection .MuiIconButton-root {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.formSection .MuiIconButton-root:hover {
+    background-color: transparent;
+}
+
+.formInput.formInputSelect select:focus {
+    background-color: transparent;
+}
+
+.formInput>button {
+    background: transparent;
+}
+
+.OTpVerify button {
+    background: transparent;
+    width: max-content;
+    margin: 0;
+    font-weight: 500;
+    font-size: 12px;
+    color: #A94545;
+}
+
+.OTpVerify span {
+    padding: 0;
+    font-weight: 600;
+    font-size: 12px;
+    color: #333333;
+}
+
+.OTpVerify div {
+    align-items: center;
+    justify-content: end !important;
+}
+
+.OTpVerify div input[type="password"] {
+    height: 48px !important;
+    width: 48px !important;
+    border: 1px solid #EEEEEE;
+    border-radius: 8px;
+    background: #fff;
+    margin-right: 5px !important;
+    outline: none;
+}
+.pl{
+    padding-left: 0 !important;
+}
+.pr
+{
+    padding-right: 0 !important;
+}
+
+.buttonholder button img {
+    max-width: 17px;
+    margin-top: 4px;
+    position: absolute;
+    margin-left: 10px;
+}
+
+.forminputcustom {
+    border: 1px solid #666666;
+    color: hsla(0,0%,7%,.54);
+    line-height: 1.286;
+    margin: 0!important;
+    padding: 7px 50px 5px 10px;
+    position: relative;
+    width: 100%!important;
+    border-radius: 12px;
+    display: block;
+    min-height: 56px;
+}
+
+.forminputcustom label {
+    color: rgb(0 0 0 / 70%);
+    font-size: 12px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: -5px;
+}
+
+.forminputcustom input {
+    border: none;
+    color: rgba(0,0,0,.87);
+    display: block;
+    line-height: 1;
+    padding: 7px 0 6px;
+    width: 100%;
+    outline: none !important;
+}
+
+.forminputcustom input:focus + div svg, .forminputcustom select:focus + div svg {
+    color: #333333;
+}
+
+.forminputcustom select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    border: none;
+    color: rgba(0,0,0,.87);
+    display: block;
+    line-height: 1.4;
+    margin-left: -10px;
+    padding: 4px 0px 5px 10px;
+    position: relative;
+    top: 2px;
+    width: calc(100% + 10px);
+    outline: none !important;
+    border-radius: 11px;
+    text-transform: capitalize;
+}
+
+.righticinp {
+    height: 24px;
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    width: 24px;
+}
+
+.formInputSelect {
+    display: flex;
+}
+
+.formInput.bulletssel .MuiFormControlLabel-root {
+    display: flex;
+    padding: 0px 0px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 0;
+    margin-right: 10px;
+}
+.formInput.bulletssel .MuiFormControlLabel-root span {
+    padding: 0px 0px;
+    line-height: 1;
+}
+.formInput.bulletssel .MuiFormControlLabel-root span + span {
+    padding-left: 10px;
+}
+.formInput.bulletssel .MuiFormGroup-root {
+    display: flex;
+    flex-direction: row;
+}
+.formInput.bulletssel {
+    text-align: left;
+}
+
+
+/* responsive */
+
+
+
+@media (max-width: 992px) {
+    .aLLTextSlider {
+        padding: 0px 20px;
+        padding-top: 50px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .formInput>.MuiTextField-root {
+        width: 100%;
+    }
+
+    .formSection {
+        width: 100%;
+    }
+
+    .formSection .MuiInputBase-formControl {
+        width: 100%;
+    }
+
+    .formSection .MuiFormControl-root.css-1nrlq1o-MuiFormControl-root {
+        width: 100%;
+    }
+
+    .OTpVerify div {
+        justify-content: center !important;
+    }
+
+    .OTpVerify div input[type="password"] {
+        height: 40px !important;
+        width: 40px !important;
+    }
+
+    .alignCenter {
+        display: none;
+    }
+
+    .loginText {
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        position:absolute;
+    }
+    .SuccessADDbg .loginText
+    {
+        position: relative;
+    }
+
+    .logo {
+        margin: auto;
+    }
+    .Change-password {
+        max-width: 400px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .loginText {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .LeftMenu {
+        width: 240px;
+    }
+}
+
+@media (max-width: 380px) {
+    .loginText {
+        padding: 20px;
+    }
+    .SuccessADDbg {
+        padding: 35px 15px;
+    }
+    .formSection span a {
+        font-size: 13px;
+    }
+}

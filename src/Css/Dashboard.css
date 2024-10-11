@@ -1,0 +1,1779 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+
+body {
+    background: #F5F5F5 !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.formInput input, .formInput select, .formInput textarea, .formInput label {
+    font-family: 'Lato', sans-serif !important;
+}
+
+div#root {
+    min-height: 100vh;
+}
+
+.Dashboard {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0px 0px 4px #e3f3ff;
+    padding: 0px 15px;
+    align-items: center;
+    position: fixed;
+    z-index: 9;
+}
+
+.topstrip {
+    width: 90%;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+}
+
+.topLogo {
+    display: flex;
+    align-items: center;
+}
+
+.topLogo a {
+    display: block;
+}
+
+.topLogo img {
+    max-width: 182px;
+    max-height: 55px;
+}
+
+.TopRightStrip {
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.UserSec {
+    display: flex;
+    transition: .5s;
+    padding: 20px 30px;
+}
+
+.UserSec a {
+    display: flex;
+    color: #333333;
+    align-items: center;
+}
+
+.UserSec a:hover {
+    color: #333333;
+}
+
+.UserSec img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.UserSec h6 {
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    position: relative;
+}
+
+.UserSec h6:before {
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border: 1.5px solid #666;
+    right: -30px;
+    top: 15px;
+    border-left: 0;
+    border-bottom: 0;
+    transform: rotate(135deg);
+}
+
+.UserSec h6 span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.TopRightStrip span a {
+    color: #666666;
+}
+
+.resPosive svg {
+    margin-right: 30px;
+    display: none;
+}
+
+.profileBox {
+    height: auto;
+    box-shadow: 0px 0px 4px #e3f3ff;
+    margin: 0;
+    list-style-type: none;
+    padding: 20px;
+    width: 240px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    z-index: 999;
+    display: none;
+    top: 78px;
+    border-radius: 10px;
+}
+
+.profileBox ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.profileBox ul li a {
+    text-decoration: none;
+    color: #666;
+}
+
+.profileBox ul li:last-of-type a {
+    color: #EE4135;
+}
+
+.profileBox ul li a svg {
+    margin-right: 10px;
+}
+
+.profileBox ul li {
+    line-height: 50px;
+}
+
+.profileBox:before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    transform: rotate(45deg);
+    border: 1px solid #e3f3ff;
+    border-bottom: 0px;
+    border-right: 0;
+    top: -9px;
+    left: calc(50% - 10px);
+    z-index: 4;
+    background-color: #ffffff;
+}
+
+.TopPROBox .UserSec .profileBox {
+    display: block;
+    transition: .5s;
+}
+
+.HomeItms {
+    height: auto;
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+}
+
+.LeftMenu {
+    width: 14%;
+    transition: .5s;
+    margin-top: 80px;
+}
+
+.menu {
+    height: 100%;
+    width: 100%;
+    background: #D44F53;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: sticky;
+    top: 80px;
+}
+
+.menu ul li a {
+    padding: 15px 20px;
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(102, 102, 102, 0.1);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li:last-of-type a {
+    text-align: right;
+    display: block;
+}
+
+.menu ul li a small {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0px 10px;
+    white-space: nowrap;
+    transition: .5s;
+}
+
+.menu ul li a label {
+    position: absolute;
+    background: #fff;
+    color: #333;
+    padding: 5px 10px;
+    z-index: 9;
+    top: 20px;
+    left: 80px;
+    box-shadow: 0px 0px 4px #e3f3ff;
+    display: none;
+    border-radius: 5px;
+}
+
+.menu ul li a label:before {
+    content: "";
+    height: 0px;
+    width: 0px;
+    border: 7px solid #ffffff;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    display: inline-block;
+    position: absolute;
+    left: -12px;
+    top: 9px;
+}
+
+.sidemenu_open .menu ul li a small {
+    display: none;
+    transition: .5s;
+}
+
+
+.sidemenu_open .menu ul li a.active svg:last-of-type {
+    display: none;
+    transition: .5s;
+}
+
+.menu ul li a svg:last-of-type {
+    display: none;
+}
+
+.sidemenu_open .menu ul li a:hover label,
+.menu ul li a::before {
+    display: block;
+    opacity: 1;
+    white-space: nowrap;
+}
+
+.menu ul li a.active {
+    color: #fff;
+}
+
+.menu ul li a svg {
+    border-radius: 12px;
+    min-height: 36px;
+    padding: 5px;
+    min-width: 36px;
+}
+
+.menu ul li a.active svg {
+    background-color: #fff;
+    color: #D44F53;
+}
+
+.menu ul li a.active svg:last-of-type {
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+}
+
+.menu ul li .bars a:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.sidemenu_open .bars a,
+.sidemenu_open .bars a:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.sidemenu_open .LeftMenu .menu ul li a:first-of-type {
+    border-top: 1px solid rgba(102, 102, 102, 0.1);
+}
+
+.bars a {
+    color: #666;
+}
+
+.bars a svg:last-of-type {
+    display: none;
+}
+
+.sidemenu_open .bars a svg:last-of-type {
+    display: block;
+    margin: auto;
+}
+
+.sidemenu_open .bars a svg:first-of-type {
+    display: none;
+}
+
+.bars a:hover {
+    color: #666;
+}
+
+.bars a svg {
+    height: 35px;
+    width: 35px;
+}
+
+.rightSection {
+    width: 77%;
+    height: auto;
+    padding: 20px 0px 0px 20px;
+    transition: .5s;
+    padding-top: 100px;
+}
+
+.sidemenu_open .LeftMenu {
+    width: 5%;
+    transition: .5s;
+    position: relative;
+    z-index: 1;
+}
+
+.sidemenu_open .rightSection {
+    width: 85%;
+    transition: .5s;
+}
+
+.DashMainBox {
+    width: 33%;
+    height: auto;
+    margin: 0px 20px 20px 0px;
+}
+
+.userbox {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px #e3f3ff;
+    border-radius: 5px;
+    padding: 25px;
+    position: relative;
+    z-index: -1;
+}
+
+.userbox h2 {
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 0.75);
+    margin: 0;
+}
+
+.userbox h2 svg {
+    float: right;
+    color: #A94545;
+    height: 36px;
+    width: 36px;
+}
+
+.userbox>svg {
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: .1;
+    color: #d44f53;
+}
+
+.BoxFlex {
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+
+.userbox h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #333333;
+    padding: 20px 0px;
+    margin: 0;
+}
+
+.userbox p {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(51, 51, 51, 0.75);
+    margin: 0;
+}
+
+.ResentBox {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px #e3f3ff;
+    border-radius: 5px;
+    padding: 25px;
+    position: relative;
+    z-index: 0;
+    min-height: 415px;
+}
+
+.scrollSection {
+    max-height: 346px;
+    min-height: 346px;
+    overflow-y: auto;
+    margin-right: 5px;
+    padding-right: 15px;
+    width: 100%;
+}
+.scrollSection::-webkit-scrollbar{
+    width: 8px;
+    display: none;
+    transition: .5s;
+    background-color: rgb(251 238 238);
+    border-radius: 12px;
+}
+.scrollSection::-webkit-scrollbar-thumb
+{
+    background-color: hwb(0deg 27% 34% / 35%);
+    border: 2px solid transparent;
+    border-radius: 12px;
+    background-clip: content-box;
+}
+.scrollSection:hover::-webkit-scrollbar
+{
+    display: block;
+    transition: .5s;
+}
+
+.recentBoxSection {
+    display: flex;
+}
+
+.ResentBox h2 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(51, 51, 51, 0.75);
+    margin: 0;
+
+}
+
+.RecentBoxInner {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(102, 102, 102, 0.1);
+}
+
+.MyOrderTab .RecentBoxInner {
+    justify-content: space-between;
+}
+
+.RecentBoxInner:last-of-type {
+    border: none;
+    padding-bottom: 0;
+}
+
+.RecentBoxInner-img {
+    display: flex;
+}
+
+.RecentBoxInner-img svg {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 36px;
+}
+
+.RecentBoxInner-text {
+    padding-left: 20px;
+}
+
+.RecentBoxInner-text h3 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.RecentBoxInner-text p {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(51, 51, 51, 0.75);
+    margin: 0;
+}
+
+.green {
+    color: #00AB00 !important;
+}
+
+.yellow {
+    color: #ECA336 !important;
+}
+
+.blue {
+    color: #355BC0 !important;
+}
+
+.red {
+    color: #D44F53 !important;
+}
+
+.RecentBoxInner-img span {
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+.PaddFild {
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.OrdersSummary svg {
+    color: #A94545;
+    height: 45px;
+    width: 45px;
+    float: right;
+}
+
+.OrdersSummary h2 {
+    padding-bottom: 15px;
+}
+
+.OrdersSummary h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #333333;
+    margin: 0;
+}
+
+.OrdersSummary p {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(51, 51, 51, 0.75);
+    padding-top: 15px;
+    margin-bottom: 30px;
+}
+
+.OrderSummaryNum {
+    display: flex;
+    border-bottom: 1px solid rgba(102, 102, 102, 0.1);
+}
+
+.OrderSummaryNum:last-of-type {
+    border-bottom: none;
+}
+
+.OrderSummaryText {
+    width: 50%;
+}
+
+.OrderSummaryText:first-of-type {
+    border-right: 1px solid rgba(102, 102, 102, 0.1);
+    margin-right: 30px;
+}
+
+.OrderSummaryText h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #333333;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.OrderSummaryText p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.MainCreateWarip {
+    display: flex;
+    width: 100%;
+}
+
+.CreateNewUserWarip {
+    width: 70%;
+    margin-right: 20px;
+}
+.CreateNewUserWarip.w100 {
+    width: 100%;
+    margin-right: 0px;
+}
+.DashMainBox:last-of-type {
+    margin-right: 0;
+}
+
+.UserBoxWarip {
+    width: 30%;
+    margin-right: 20px;
+}
+
+.UserBoxWarip>.userbox {
+    margin-bottom: 20px;
+}
+
+.CreateNewUserWarip .formSection {
+    margin: inherit !important;
+}
+
+.CreateNewUserWarip .userbox h2 {
+    padding-bottom: 40px;
+}
+
+.SuccessADD {
+    width: 60%;
+    margin-right: 20px;
+}
+
+.SuccessADDbg {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px #e3f3ff;
+    border-radius: 5px;
+    padding: 35px 25px;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.SuccessADDbg h6 {
+    padding-bottom: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 0.75);
+    margin: 0;
+}
+
+.SuccessADDbg .textSection img {
+    margin-top: 0;
+}
+
+.UserBoxWarip .ResentBox {
+    margin-bottom: 20px !important;
+}
+
+.TwoInput {
+    display: flex;
+    width: 100%;
+}
+
+.TwoInput .MuiInputBase-formControl {
+    width: 90%;
+}
+
+.Description {
+    height: auto;
+    width: 100%;
+}
+
+.Description a {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #A94545;
+    display: block;
+    text-decoration: none;
+}
+
+.Description a:hover {
+    color: #A94545;
+}
+
+.Description a svg {
+    color: #A94545;
+    margin-right: 10px;
+}
+
+.rightSection>h4 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #A94545;
+}
+
+.rightSection h4 a {
+    font-weight: 600;
+    font-size: 16px;
+    color: #A94545;
+    text-decoration: none;
+    display: inline-flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.rightSection>p {
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(51, 51, 51, 0.75);
+}
+
+.rightSection h4 a svg {
+    margin-right: 10px;
+    color: #666666;
+}
+
+.SuccessQR {
+    width: 340px;
+    margin: auto;
+    text-align: center;
+}
+
+.SuccessQRBox {
+    display: flex;
+    height: auto;
+    text-align: left;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.SuccessQRImg {
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 15px;
+}
+
+.SuccessQRImg img {
+    height: 100%;
+    width: 100%;
+}
+
+.SuccessQRText {
+    height: auto;
+    width: 100%;
+}
+
+.SuccessQRText h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: rgba(18, 18, 18, 0.87);
+    margin: 0;
+}
+
+.SuccessQRText p {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(18, 18, 18, 0.54);
+}
+
+.SuccessQR button {
+    background: #A94545;
+    border-radius: 12px;
+    width: 100%;
+    height: 48px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.SuccessQR h5 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: rgba(18, 18, 18, 0.54);
+    padding-top: 10px;
+}
+
+.PrismIndia {
+    height: auto;
+    width: 100%;
+}
+
+.PrismIndia h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(51, 51, 51, 0.75);
+    margin: 0;
+}
+
+.PrismIndia h3 svg {
+    float: right;
+}
+
+.PrismIndia p {
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(51, 51, 51, 0.75);
+    margin: 0;
+    position: relative;
+    padding-top: 10px;
+}
+
+.PrismIndia p a {
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    color: rgba(51, 51, 51, 0.75);
+}
+
+
+.rightSection>p {
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(51, 51, 51, 0.75);
+}
+
+.InfiDetails {
+    height: auto;
+    width: 100%;
+}
+
+.DetailsSection {
+    min-width: 50%;
+    float: left;
+    height: auto;
+    padding-top: 40px;
+}
+
+.DetailsSection label {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(51, 51, 51, 0.75);
+}
+
+.DetailsSection h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #333333;
+    padding-top: 10px;
+}
+
+.PersonalInfo {
+    height: auto;
+    width: 100%;
+}
+
+.PersonalInfo h2 {
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: rgba(51, 51, 51, 0.75);
+    margin: 0;
+}
+
+.PersonalInfo h2 a {
+    float: right;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #A94545;
+}
+
+.ChangePassword h3 {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.ChangePassword h3 a {
+    color: #A94545;
+    text-decoration: none;
+}
+
+.ChangePassword {
+    height: auto;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.ChangePassword h3 {
+    font-size: 18px;
+    color: #A94545;
+}
+
+.Profile {
+    text-align: center;
+    height: auto;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.ProfileImage {
+    max-width: 120px;
+    max-height: 120px;
+    margin: auto;
+    position: relative;
+}
+
+.file-input__input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.ProfileImage img {
+    height: 100%;
+    width: 100%;
+}
+
+.ProfileImage svg {
+    position: absolute;
+    bottom: 6px;
+    right: -12px;
+    background: #d44f53;
+    color: #fff;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 3px solid #fff;
+    cursor: pointer;
+}
+
+.Profile h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #333333;
+    padding-top: 30px;
+}
+
+.Profile p {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: rgba(51, 51, 51, 0.75);
+}
+
+.MyOrderTab {
+    height: auto;
+    width: 100%;
+}
+
+.MyOrderTab ul {
+    border-bottom: 1px solid rgba(102, 102, 102, 0.1);
+    display: flex;
+    max-width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.MyOrderTab ul li {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    color: rgba(51, 51, 51, 0.54);
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0px 18px;
+    padding-bottom: 18px;
+}
+
+.MyOrderTab ul .react-tabs__tab.react-tabs__tab--selected {
+    border: none;
+    border-bottom: 2px solid #A94545;
+    color: #A94545;
+}
+
+.MyOrderTab ul .react-tabs__tab.react-tabs__tab--selected::before,
+.MyOrderTab ul .react-tabs__tab.react-tabs__tab--selected::after {
+    display: none !important;
+}
+
+
+.cementBag {
+    height: auto;
+    width: 100%;
+}
+
+.cementext {
+    height: auto;
+    width: 100%;
+}
+
+.cementext h2 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(51, 51, 51, 1);
+}
+
+.cementext h2 a {
+    float: right;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #A94545;
+}
+
+.cementext p {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(51, 51, 51, 0.75);
+    margin: 0;
+}
+
+.cementIn {
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(102, 102, 102, 0.1);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cementInPadd {
+    padding-top: 0;
+}
+
+.cementIn > a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cementextLeft h3 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333;
+    line-height: 28px;
+}
+.cementextLeft h2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.cementextLeft p {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(51, 51, 51, 0.75);
+    margin: 0;
+}
+
+.cementextLeft p em {
+    font-style: normal;
+    float: right;
+}
+.cementIn:last-of-type
+{
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+.cementextRight label {
+    display: inline-block;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 12px;
+    position: relative;
+    white-space: nowrap;
+}
+.cementextRight label:last-of-type {
+    margin-left: 15px;
+}
+.cementextRight label button, .cementextRight label a {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+}
+.cementextRight label button:active:focus
+{
+    color:#A94545 ;
+}
+.cementextRight label:first-of-type button, .cementextRight label:first-of-type a
+{
+    color: #A94545;
+}
+
+.FirstBTncolor
+{
+    color: #333 !important;
+}
+
+.cementextRight label:first-of-type {
+    color: #A94545;
+}
+
+.bag-details {
+    height: auto;
+    width: 100%;
+    padding: 40px 0px;
+}
+
+.bag-details h2 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.bag-details p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgba(51, 51, 51, 0.75);
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+.bag-details p a {
+    color: #A94545;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.bag-details .cementextRight {
+    text-align: center;
+}
+
+.bag-details .cementextRight label svg {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 10px;
+}
+
+.ScanReport h2 {
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.ScanReport h2 label {
+    float: right;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.cementextLeftWrap {
+    display: flex;
+    align-items: center;
+}
+
+.cementextLeftWrap svg {
+    margin-right: 10px;
+}
+
+.MyOrderTab .RecentBoxInner a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: inherit;
+}
+
+.ResentOrderS .RecentBoxInner {
+    justify-content: space-between;
+}
+
+.sidemenu_open .LeftMenu .menu ul li a {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.passwordSuccessPage {
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+
+.passwordSuccessPage .formSection {
+    margin: auto !important;
+}
+
+.passwordSuccessPage .formSection button {
+    margin-top: 0 !important;
+}
+.resmenu .LeftMenu {
+    position: fixed;
+    left: 0;
+    z-index: 9;
+}
+.formSection .formInput .MuiInputBase-formControl #filled-adornment-password[type="text"]+div svg {
+    color: #A94545;
+}
+.SuccessADDbg .loginText {
+    top: inherit;
+    left: inherit;
+    transform: inherit;
+}
+
+.ShippingAddress {
+    display: flex;
+    padding-top: 20px;
+}
+
+.ShippingAddress .cementextLeft {
+    width: 50%;
+    padding-right: 20px;
+}
+.ShippingAddress .cementextLeft h3 {
+    line-height: 24px;
+}
+.ShippingAddress .cementextLeft span {
+    float: right;
+    font-size: 12px;
+    text-align: center;
+}
+.ShippingAddress .cementextLeft span a
+{
+    color: #A94545;
+}
+
+.MyOrderTab .cementIn > span
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.moreSection {
+    position: absolute;
+    min-width: 200px;
+    height: auto;
+    box-shadow: 0px 0px 4px #e3f3ff;
+    background: #fff;
+    z-index: 9;
+    padding: 20px;
+    right: 0;
+    top: 55px;
+    border-radius: 10px;
+display: none;
+}
+.moreSection.active {
+    display: block;
+}
+.cementIn.itemActive button {
+    color: #A94545;
+}
+.moreSection::before
+{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    border: 1px solid #e3f3ff;
+    border-bottom: 0px;
+    border-right: 0;
+    top: -7px;
+    right: 18px;
+    z-index: 4;
+    background-color: #ffffff;
+}
+
+.moreSec .moreSection
+{
+display: block;
+}
+
+.moreSec .cementextRight label button
+{
+    color:#A94545 ;
+    cursor: pointer;
+}
+
+.moreSection ul {
+    overflow: inherit;
+    display: block;
+    border: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.moreSection ul li {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.moreSection ul li:last-of-type
+{
+    margin-bottom: 0;
+}
+
+.moreSection ul li a, .moreSection ul li .actionb {
+    color: #666;
+    float: left;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+}
+.moreSection ul li:nth-child(3) .actionb, .moreSection ul li:nth-child(3) a {
+    color: #EE4135;
+}
+
+.bullets {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.bullets:before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    background: rgb(102 102 102 / 30%);
+    border-radius: 50%;
+    top: 8px;
+}
+.moreSection ul li a svg, .moreSection ul li .actionb svg
+{
+    margin-right: 10px;
+    min-width: 30px;
+}
+.deletepopup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0 0 0 / 64%);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all .4s;
+}
+.deletepopup.activep {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+.deletepopupin {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.deletepopupin h5 {
+    display: block;
+    white-space: normal;
+    color: #000000;
+    line-height: 1.5;
+    font-size: 17px;
+}
+
+.actionbtn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.actionbtn span {
+    display: inline-block;
+    padding: 10px 16px;
+    color: #ffffff;
+    margin: 0px 10px;
+    border-radius: 4px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.closebtnpop {
+    background-color: #00a8ff;
+}
+
+.confirmbtnpop {
+    background-color: red;
+}
+
+.actionbtn span:hover {
+    opacity: .7;
+}
+
+.cementextLeft {
+    width: 100%;
+}
+.Scanitems {
+    height: auto;
+    width: 100%;
+    padding: 20px 0px;
+    border: 1px solid rgba(102, 102, 102, 0.1);
+    border-left: 0;
+    border-right: 0;
+    margin-top: 20px;
+}
+
+.Scanitems h2 {
+    font-size: 16px;
+    color: rgba(51, 51, 51, 0.75);
+}
+
+.Scanitems h2 b {
+    color: #333;
+}
+
+.Scanitems p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #355BC0;
+    margin: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+select:-webkit-autofill,
+textarea:-webkit-autofill,
+input:-webkit-autofill:active {
+  transition: background-color 9999s ease-in-out 0s !important;
+}
+
+/* responsive section */
+
+@media (max-width: 1653px) {
+    .LeftMenu {
+        width: 15%;
+    }
+
+    .rightSection {
+        width: 74%;
+    }
+}
+
+@media (max-width: 1435px) {
+    .LeftMenu {
+        width: 20%;
+    }
+
+    .rightSection {
+        width: 74%;
+    }
+
+    .DashMainBox:last-of-type {
+        margin-right: 20px;
+    }
+
+    .menu ul li a small {
+        padding: 0px 10px;
+    }
+}
+
+@media (max-width: 1095px) {
+    .LeftMenu {
+        width: 22%;
+    }
+
+    .rightSection {
+        width: 78%;
+    }
+
+    .RecentBoxInner {
+        display: block;
+    }
+    .RecentBoxInner-text {
+        padding-left: 5px;
+    }
+
+    .menu ul li a small {
+        padding: 0px 10px;
+    }
+    .ResentBox {
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .topstrip {
+        width: 100%;
+    }
+
+    .resPosive svg {
+        display: block;
+    }
+
+    .resmenu .resPosive svg {
+        color: #A94545;
+    }
+
+    .bars {
+        display: none;
+    }
+
+    .LeftMenu {
+        width: 300px;
+        position: absolute;
+        left: -300px;
+        height: 100%;
+        z-index: 9;
+    }
+
+    .rightSection {
+        width: 100%;
+        padding: 20px 20px 0px 20px;
+        padding-top: 100px;
+    }
+
+    .DashMainBox:last-of-type {
+        margin-right: 0px;
+    }
+
+    .ResentOrderS .RecentBoxInner-img {
+        padding-top: 10px;
+    }
+
+    .RecentBoxInner-text {
+        padding-left: 0px;
+    }
+
+    .BoxFlex .DashMainBox {
+        width: 32% !important;
+    }
+
+    .DashMainBox {
+        width: 48%;
+    }
+
+    .BoxFlex {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .recentBoxSection {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .DashMainBox {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .userbox {
+        padding: 20px;
+    }
+
+    .UserBoxWarip {
+        margin-right: 0px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .MainCreateWarip {
+        display: block;
+    }
+
+    .CreateNewUserWarip {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .UserBoxWarip {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .UserBoxWarip>.userbox {
+        width: 48%;
+    }
+    .SuccessADD {
+        width: 100%;
+    }
+    .SuccessADDbg {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 618px) {
+    .BoxFlex .DashMainBox {
+        width: 49% !important;
+    }
+}
+
+
+@media (max-width: 522px) {
+    .cementIn a {
+        display: block;
+    }
+
+    .cementextRight label {
+        text-align: center;
+        padding-right: 5px;
+    }
+
+    .cementextRight {
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+
+    .ShippingAddress {
+        display: block;
+    }
+    .ShippingAddress .cementextLeft {
+        width: 100%;
+    }
+    .MyOrderTab .cementextRight
+{
+    display: flex;
+}
+}
+
+@media (max-width: 508px) {
+    .rightSection {
+        padding-top: 120px;
+    }
+    .UserSec {
+        padding: 20px 20px;
+    }
+    .UserSec h6 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .BoxFlex .DashMainBox {
+        width: 100% !important;
+    }
+
+    .DashMainBox {
+        width: 100%;
+    }
+
+    .UserSec h6 {
+        display: none;
+    }
+
+    .DashMainBox:last-of-type {
+        margin-right: 0px;
+    }
+
+    .rightSection {
+        padding-top: 100px;
+    }
+
+    .MyOrderTab ul li {
+        margin: 0px 10px;
+    }
+
+    .UserBoxWarip>.userbox {
+        width: 100%;
+    }
+
+    .SuccessADDbg {
+        margin-right: 0;
+    }
+
+    .recentBoxSection .DashMainBox {
+        margin-bottom: 20px;
+    }
+
+    .CreateNewUserWarip {
+        margin-right: 20px;
+    }
+
+    .formInput>.MuiTextField-root {
+        width: 100%;
+    }
+
+    .formSection {
+        width: 100%;
+    }
+
+    .formSection .MuiInputBase-formControl {
+        width: 100%;
+    }
+
+    .formSection .MuiFormControl-root.css-1nrlq1o-MuiFormControl-root {
+        width: 100%;
+    }
+
+    .profileBox {
+        padding: 12px;
+        width: 190px;
+    }
+
+    .profileBox ul li {
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    .profileBox ul li a svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .profileBox:before {
+        right: 40px;
+        left: inherit;
+        height: 15px;
+        width: 15px;
+    }
+
+    .scrollSection
+    {
+        min-height: 100%;
+        max-height: 100%;
+
+    }
+    .moreSection ul li a, .moreSection ul li .actionb {
+        line-height: 35px;
+    }
+}
+
+@media (max-width: 370px) {
+    .UserSec {
+        padding: 20px 10px;
+    }
+
+    .resPosive svg {
+        margin-right: 15px;
+    }
+    .profileBox:before {
+        right: 20px;
+    }
+    .MyOrderTab .cementIn a {
+        display: block;
+    }
+    .MyOrderTab .cementextRight {
+        padding-left: 23px;
+    }
+    .moreSection {
+        right: -48px;
+    }
+    .moreSection::before {
+        right: 67px;
+    }
+}
